@@ -1,0 +1,959 @@
+{
+	"info": {
+		"name": "dLink",
+		"_postman_id": "058a30e8-0474-a559-c68c-222b1a69b1bb",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetParameters",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "77209795-53aa-472f-9325-0ef39c7dedc2",
+						"type": "text/javascript",
+						"exec": [
+							"HA1: 1c89a3a83269fc853f7e6d56e5ff3967",
+							"HA2: 8f403b9ba098aac3d3c89071cb11f024",
+							"MD5: 4065c87b2ffb5a1a403a89f7640aecff",
+							"",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "digest",
+					"digest": [
+						{
+							"key": "opaque",
+							"value": "352ebb30",
+							"type": "string"
+						},
+						{
+							"key": "nonce",
+							"value": "38711549caa0b1b33c84",
+							"type": "string"
+						},
+						{
+							"key": "clientNonce",
+							"value": "0a4f113c",
+							"type": "string"
+						},
+						{
+							"key": "nonceCount",
+							"value": "000001",
+							"type": "string"
+						},
+						{
+							"key": "qop",
+							"value": "auth",
+							"type": "string"
+						},
+						{
+							"key": "realm",
+							"value": "HNAP Authentication",
+							"type": "string"
+						},
+						{
+							"key": "disableRetryRequest",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "algorithm",
+							"value": "MD5",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "692259",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml; charset=utf-8"
+					},
+					{
+						"key": "Content-Length",
+						"value": "1000"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "\"http://purenetworks.com/HNAP1/GetDeviceSettings\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n\t<soap:Body>\r\n\t\t<GetDeviceSettings xmlns=\"http://purenetworks.com/HNAP1/\"/>\r\n\t</soap:Body>\r\n</soap:Envelope>\r\n"
+				},
+				"url": {
+					"raw": "http://192.168.0.20/HNAP1/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"20"
+					],
+					"path": [
+						"HNAP1",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GetParameters copy",
+			"request": {
+				"auth": {
+					"type": "digest",
+					"digest": [
+						{
+							"key": "algorithm",
+							"value": "MD5",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "disableRetryRequest",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "password",
+							"value": "818951",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml; charset=utf-8"
+					},
+					{
+						"key": "Content-Length",
+						"value": "150"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n\t<soap:Body>\r\n\t\t<GetDeviceSettings xmlns=\"http://purenetworks.com/HNAP1/\">\r\n\t\t</GetDeviceSettings>\r\n\t</soap:Body>\r\n</soap:Envelope>\r\n"
+				},
+				"url": {
+					"raw": "http://192.168.0.20/HNAP1/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"20"
+					],
+					"path": [
+						"HNAP1",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "77209795-53aa-472f-9325-0ef39c7dedc2",
+						"type": "text/javascript",
+						"exec": [
+							"HA1: 1c89a3a83269fc853f7e6d56e5ff3967",
+							"HA2: 8f403b9ba098aac3d3c89071cb11f024",
+							"MD5: 4065c87b2ffb5a1a403a89f7640aecff",
+							"",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "digest",
+					"digest": [
+						{
+							"key": "opaque",
+							"value": "7667bb20",
+							"type": "string"
+						},
+						{
+							"key": "nonce",
+							"value": "387116d5caa22318cf0b",
+							"type": "string"
+						},
+						{
+							"key": "clientNonce",
+							"value": "0a4f113c",
+							"type": "string"
+						},
+						{
+							"key": "nonceCount",
+							"value": "000001",
+							"type": "string"
+						},
+						{
+							"key": "qop",
+							"value": "auth",
+							"type": "string"
+						},
+						{
+							"key": "realm",
+							"value": "HNAP Authentication",
+							"type": "string"
+						},
+						{
+							"key": "disableRetryRequest",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "algorithm",
+							"value": "MD5",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "692259",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml; charset=utf-8"
+					},
+					{
+						"key": "Content-Length",
+						"value": "1000"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "\"http://purenetworks.com/HNAP1/GetDeviceSettings\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n\t<soap:Body>\r\n\t\t<Login xmlns=\"http://purenetworks.com/HNAP1/\"/>\r\n\t\t<Username>admin</Username>\r\n\t\t<Password>692259</Password>\r\n\t</soap:Body>\r\n</soap:Envelope>\r\n"
+				},
+				"url": {
+					"raw": "http://192.168.0.20/HNAP1/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"20"
+					],
+					"path": [
+						"HNAP1",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "IsdeviceReady",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "77209795-53aa-472f-9325-0ef39c7dedc2",
+						"type": "text/javascript",
+						"exec": [
+							"HA1: 1c89a3a83269fc853f7e6d56e5ff3967",
+							"HA2: 8f403b9ba098aac3d3c89071cb11f024",
+							"MD5: 4065c87b2ffb5a1a403a89f7640aecff",
+							"",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "digest",
+					"digest": [
+						{
+							"key": "opaque",
+							"value": "8800b6fd",
+							"type": "string"
+						},
+						{
+							"key": "nonce",
+							"value": "386d45c6ca5470d53675",
+							"type": "string"
+						},
+						{
+							"key": "clientNonce",
+							"value": "0a4f113c",
+							"type": "string"
+						},
+						{
+							"key": "nonceCount",
+							"value": "000001",
+							"type": "string"
+						},
+						{
+							"key": "qop",
+							"value": "auth",
+							"type": "string"
+						},
+						{
+							"key": "realm",
+							"value": "HNAP Authentication",
+							"type": "string"
+						},
+						{
+							"key": "disableRetryRequest",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "algorithm",
+							"value": "MD5",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "692259",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml; charset=utf-8"
+					},
+					{
+						"key": "Content-Length",
+						"value": "1000"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "\"http://purenetworks.com/HNAP1/IsDeviceReady\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n\t<soap:Body>\r\n\t\t<IsDeviceReady xmlns=\"http://purenetworks.com/HNAP1/\"/>\r\n\t</soap:Body>\r\n</soap:Envelope>\r\n"
+				},
+				"url": {
+					"raw": "http://192.168.0.20/HNAP1/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"20"
+					],
+					"path": [
+						"HNAP1",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GetNetworkSettings",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "77209795-53aa-472f-9325-0ef39c7dedc2",
+						"type": "text/javascript",
+						"exec": [
+							"HA1: 1c89a3a83269fc853f7e6d56e5ff3967",
+							"HA2: 8f403b9ba098aac3d3c89071cb11f024",
+							"MD5: 4065c87b2ffb5a1a403a89f7640aecff",
+							"",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "digest",
+					"digest": [
+						{
+							"key": "nonceCount",
+							"value": "000002",
+							"type": "string"
+						},
+						{
+							"key": "opaque",
+							"value": "8800b6fd",
+							"type": "string"
+						},
+						{
+							"key": "nonce",
+							"value": "386d45c6ca5470d53675",
+							"type": "string"
+						},
+						{
+							"key": "clientNonce",
+							"value": "0a4f113c",
+							"type": "string"
+						},
+						{
+							"key": "qop",
+							"value": "auth",
+							"type": "string"
+						},
+						{
+							"key": "realm",
+							"value": "HNAP Authentication",
+							"type": "string"
+						},
+						{
+							"key": "disableRetryRequest",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "algorithm",
+							"value": "MD5",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "692259",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml; charset=utf-8"
+					},
+					{
+						"key": "Content-Length",
+						"value": "1000"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "http://purenetworks.com/HNAP1/GetNetworkSettings"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n\t<soap:Body>\r\n\t\t<GetNetworkSettings xmlns=\"http://purenetworks.com/HNAP1/\"/>\r\n\t</soap:Body>\r\n</soap:Envelope>\r\n"
+				},
+				"url": {
+					"raw": "http://192.168.0.20/HNAP1/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"20"
+					],
+					"path": [
+						"HNAP1",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GetWLanRadios",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "77209795-53aa-472f-9325-0ef39c7dedc2",
+						"type": "text/javascript",
+						"exec": [
+							"HA1: 1c89a3a83269fc853f7e6d56e5ff3967",
+							"HA2: 8f403b9ba098aac3d3c89071cb11f024",
+							"MD5: 4065c87b2ffb5a1a403a89f7640aecff",
+							"",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "digest",
+					"digest": [
+						{
+							"key": "nonceCount",
+							"value": "000003",
+							"type": "string"
+						},
+						{
+							"key": "opaque",
+							"value": "8800b6fd",
+							"type": "string"
+						},
+						{
+							"key": "nonce",
+							"value": "386d45c6ca5470d53675",
+							"type": "string"
+						},
+						{
+							"key": "clientNonce",
+							"value": "0a4f113c",
+							"type": "string"
+						},
+						{
+							"key": "qop",
+							"value": "auth",
+							"type": "string"
+						},
+						{
+							"key": "realm",
+							"value": "HNAP Authentication",
+							"type": "string"
+						},
+						{
+							"key": "disableRetryRequest",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "algorithm",
+							"value": "MD5",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "692259",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml; charset=utf-8"
+					},
+					{
+						"key": "Content-Length",
+						"value": "1000"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "http://purenetworks.com/HNAP1/GetWLanRadios"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n\t<soap:Body>\r\n\t\t<GetWLanRadios xmlns=\"http://purenetworks.com/HNAP1/\"/>\r\n\t</soap:Body>\r\n</soap:Envelope>\r\n"
+				},
+				"url": {
+					"raw": "http://192.168.0.20/HNAP1/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"20"
+					],
+					"path": [
+						"HNAP1",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GetAPClientSettings",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "77209795-53aa-472f-9325-0ef39c7dedc2",
+						"type": "text/javascript",
+						"exec": [
+							"HA1: 1c89a3a83269fc853f7e6d56e5ff3967",
+							"HA2: 8f403b9ba098aac3d3c89071cb11f024",
+							"MD5: 4065c87b2ffb5a1a403a89f7640aecff",
+							"",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "digest",
+					"digest": [
+						{
+							"key": "nonceCount",
+							"value": "000004",
+							"type": "string"
+						},
+						{
+							"key": "opaque",
+							"value": "8800b6fd",
+							"type": "string"
+						},
+						{
+							"key": "nonce",
+							"value": "386d45c6ca5470d53675",
+							"type": "string"
+						},
+						{
+							"key": "clientNonce",
+							"value": "0a4f113c",
+							"type": "string"
+						},
+						{
+							"key": "qop",
+							"value": "auth",
+							"type": "string"
+						},
+						{
+							"key": "realm",
+							"value": "HNAP Authentication",
+							"type": "string"
+						},
+						{
+							"key": "disableRetryRequest",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "algorithm",
+							"value": "MD5",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "692259",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml; charset=utf-8"
+					},
+					{
+						"key": "Content-Length",
+						"value": "1000"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "http://purenetworks.com/HNAP1/GetAPClientSettings"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n\t<soap:Body>\r\n\t\t<GetAPClientSettings xmlns=\"http://purenetworks.com/HNAP1/\">\r\n\t\t\t<RadioID>RADIO_2.4GHz</RadioID>\r\n\t\t</GetAPClientSettings>\r\n\t</soap:Body>\r\n</soap:Envelope>\r\n"
+				},
+				"url": {
+					"raw": "http://192.168.0.20/HNAP1/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"20"
+					],
+					"path": [
+						"HNAP1",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "SetAPClientSettings",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "77209795-53aa-472f-9325-0ef39c7dedc2",
+						"type": "text/javascript",
+						"exec": [
+							"HA1: 1c89a3a83269fc853f7e6d56e5ff3967",
+							"HA2: 8f403b9ba098aac3d3c89071cb11f024",
+							"MD5: 4065c87b2ffb5a1a403a89f7640aecff",
+							"",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "digest",
+					"digest": [
+						{
+							"key": "opaque",
+							"value": "f6db863e",
+							"type": "string"
+						},
+						{
+							"key": "nonce",
+							"value": "386d44b6ca54ee0270c7",
+							"type": "string"
+						},
+						{
+							"key": "nonceCount",
+							"value": "000002",
+							"type": "string"
+						},
+						{
+							"key": "clientNonce",
+							"value": "0a4f113c",
+							"type": "string"
+						},
+						{
+							"key": "qop",
+							"value": "auth",
+							"type": "string"
+						},
+						{
+							"key": "realm",
+							"value": "HNAP Authentication",
+							"type": "string"
+						},
+						{
+							"key": "disableRetryRequest",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "algorithm",
+							"value": "MD5",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "692259",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml; charset=utf-8"
+					},
+					{
+						"key": "Content-Length",
+						"value": "1000"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "http://purenetworks.com/HNAP1/SetAPClientSettings"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n\t<soap:Body>\r\n\t\t<SetAPClientSettings xmlns=\"http://purenetworks.com/HNAP1/\">\r\n\t\t\t<RadioID>RADIO_2.4GHz</RadioID>\r\n\t\t\t<Enabled>true</Enabled>\r\n\t\t\t<SSID>fritz_klubska</SSID>\r\n\t\t\t<MacAddress>74:DA:DA:5F:65:25</MacAddress>\r\n\t\t\t<ChannelWidth>0</ChannelWidth>\r\n\t\t\t<SupportedSecurity>\r\n                <SecurityInfo>\r\n                    <SecurityType>WPA-PSK</SecurityType>\r\n                    <Encryptions>\r\n                        <string>TKIP</string>\r\n                    </Encryptions>\r\n                </SecurityInfo>\r\n            </SupportedSecurity>\r\n            <Key>SH_test!</Key>\r\n\t\t</SetAPClientSettings>\r\n\t</soap:Body>\r\n</soap:Envelope>\r\n"
+				},
+				"url": {
+					"raw": "http://192.168.0.20/HNAP1/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"20"
+					],
+					"path": [
+						"HNAP1",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GetSiteSurvey",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "77209795-53aa-472f-9325-0ef39c7dedc2",
+						"type": "text/javascript",
+						"exec": [
+							"HA1: 1c89a3a83269fc853f7e6d56e5ff3967",
+							"HA2: 8f403b9ba098aac3d3c89071cb11f024",
+							"MD5: 4065c87b2ffb5a1a403a89f7640aecff",
+							"",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "digest",
+					"digest": [
+						{
+							"key": "nonceCount",
+							"value": "000007",
+							"type": "string"
+						},
+						{
+							"key": "opaque",
+							"value": "8800b6fd",
+							"type": "string"
+						},
+						{
+							"key": "nonce",
+							"value": "386d45c6ca5470d53675",
+							"type": "string"
+						},
+						{
+							"key": "clientNonce",
+							"value": "0a4f113c",
+							"type": "string"
+						},
+						{
+							"key": "qop",
+							"value": "auth",
+							"type": "string"
+						},
+						{
+							"key": "realm",
+							"value": "HNAP Authentication",
+							"type": "string"
+						},
+						{
+							"key": "disableRetryRequest",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "algorithm",
+							"value": "MD5",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "692259",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml; charset=utf-8"
+					},
+					{
+						"key": "Content-Length",
+						"value": "1000"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "http://purenetworks.com/HNAP1/GetSiteSurvey"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n\t<soap:Body>\r\n\t\t<GetSiteSurvey xmlns=\"http://purenetworks.com/HNAP1/\">\r\n\t\t\t<RadioID>RADIO_2.4GHz</RadioID>\r\n\t\t</GetSiteSurvey>\r\n\t</soap:Body>\r\n</soap:Envelope>\r\n"
+				},
+				"url": {
+					"raw": "http://192.168.0.20/HNAP1/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"20"
+					],
+					"path": [
+						"HNAP1",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
